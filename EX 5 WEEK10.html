@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Display</title>
+</head>
+<body>
+  <script>
+    // Use a for loop to display the images
+    for (var i = 1; i <= 4; i++) {
+      // Create an image element
+      var img = document.createElement("img");
+
+      // Set the source of the image
+      img.src = i + ".jpg";
+
+      // Set the width and height of the image
+      img.width = 200;
+      img.height = 200;
+
+      // Add the image to the body of the document
+      document.body.appendChild(img);
+    }
+  </script>
+</body>
+</html>

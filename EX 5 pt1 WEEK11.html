@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Value Validation</title>
+</head>
+<body>
+  <label for="inputValue">Enter a value:</label>
+  <input type="text" id="inputValue">
+  <button onclick="checkNaN()">Check NaN</button>
+  
+  <script>
+    function checkNaN() {
+      const inputValue = document.getElementById('inputValue').value;
+      
+      if (isNaN(inputValue)) {
+        alert("The entered value is NaN.");
+      } else {
+        alert("The entered value is not NaN.");
+      }
+    }
+  </script>
+</body>
+</html>

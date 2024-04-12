@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Match Validation</title>
+</head>
+<body>
+  <label for="password">Password:</label>
+  <input type="password" id="password">
+  
+  <label for="confirmPassword">Confirm Password:</label>
+  <input type="password" id="confirmPassword">
+  
+  <button onclick="checkPasswordMatch()">Check Password Match</button>
+  
+  <script>
+    function checkPasswordMatch() {
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+      
+      if (password === confirmPassword) {
+        alert("Passwords match!");
+      } else {
+        alert("Passwords do not match!");
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Background Color</title>
+  <style>
+    /* Some basic styling for the paragraph */
+    #colorPara {
+      padding: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <p id="colorPara">This is a paragraph whose background color will change.</p>
+  
+  <!-- Button to change background color -->
+  <button onclick="changeColor()">Change Color</button>
+  
+  <script>
+    function changeColor() {
+      const para = document.getElementById('colorPara');
+      
+      // Generate a random color
+      const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+      
+      // Set the background color of the paragraph
+      para.style.backgroundColor = randomColor;
+    }
+  </script>
+</body>
+</html>

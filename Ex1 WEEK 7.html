@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Our Website</title>
+    <style>
+        .search-box {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #000;
+        }
+        h1 {
+            text-align: center;
+        }
+        hr {
+            border: 1px solid #000;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="submit"], input[type="reset"] {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .btn-group {
+            text-align: left;
+        }
+        .btn-group input {
+            padding: 5px 15px;
+            margin-right: 10px;
+            border: 1px solid #000;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .btn-group input:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-box">
+        <h1>Search Our Website</h1>
+        <hr>
+        <form name="searchForm">
+            <label for="searchLocation">Where do you want to search?</label>
+            <ul>
+                <li><input type="radio" name="searchLocation" id="wholeSite" value="Whole site" checked> <label for="wholeSite">Whole site</label></li>
+                <li><input type="radio" name="searchLocation" id="businessPartners" value="Business Partners Section"> <label for="businessPartners">Business Partners Section</label></li>
+                <li><input type="radio" name="searchLocation" id="corporateCommunications" value="Corporate Communications Section"> <label for="corporateCommunications">Corporate Communications Section</label></li>
+                <li><input type="radio" name="searchLocation" id="lotusEducation" value="Lotus Education Section"> <label for="lotusEducation">Lotus Education Section</label></li>
+            </ul>
+
+            <label for="searchKeyword">Enter a word or two that we can search on:</label>
+            <input type="text" name="searchKeyword" id="searchKeyword" placeholder="Enter keywords">
+
+            <div class="btn-group">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

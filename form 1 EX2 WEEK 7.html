@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Test</title>
+    <style>
+        form {
+            width: 400px;
+            padding: 20px;
+            border: 2px solid #000;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 10px;
+        }
+        .btn-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn-group button {
+            padding: 10px 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form name="form1">
+        <h1 style="font-weight: bold;">HTML Form Test</h1>
+        <table>
+            <tr>
+                <td width="150px">Name</td>
+                <td><input type="text" name="text Name"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbies</td>
+                <td>
+                    <input type="checkbox" name="Hobbies" value="Sports"> Sports
+                    <input type="checkbox" name="Hobbies" value="Movies"> Movies
+                    <input type="checkbox" name="Hobbies" value="Travelling"> Travelling
+                </td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <input type="text" name="Country" value="Nepal"> Nepal
+                    <input type="text" name="Country" value="USA"> USA
+                    <input type="text" name="Country" value="UK"> UK
+                </td>
+            </tr>
+            <tr>
+                <td>Message</td>
+                <td><textarea rows="4" cols="20" name="message"></textarea></td>
+            </tr>
+        </table>
+        <div class="btn-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>

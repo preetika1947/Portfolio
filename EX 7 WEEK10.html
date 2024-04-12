@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table Layout Example</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid black;
+      }
+      tr:nth-child(odd) {
+        background-color: #3891A7;
+      }
+      tr:nth-child(even) {
+        background-color: #CEDCE1;
+      }
+      tr:nth-child(3) {
+        background-color: #E8EEF1;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>S.N.</th>
+          <th>Name</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <script>
+          var names = ["Name 1", "Name 2", "Name 3", "Name 4"];
+          var images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg"];
+          for (var i = 0; i < names.length; i++) {
+            // Check if image exists, if not, use a default image
+            var imgSrc = images[i] ? images[i] : "default.jpg";
+            // Check if imgSrc is empty, if so, don't include alt attribute
+            var imgAlt = images[i] ? " alt='" + names[i] + "'" : "";
+            document.write(
+              "<tr><td>" + (i + 1) + "</td><td>" + names[i] + "</td><td><img src='" + imgSrc + "'" + imgAlt + " width='50'></td></tr>"
+            );
+          }
+        </script>
+      </tbody>
+    </table>
+  </body>
+</html>
