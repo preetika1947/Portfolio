@@ -1,0 +1,45 @@
+
+body {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;
+background-color: #CCFFFF; }
+
+h1 {font-size: 14px; font-variant: small-caps; color: #FF0000;
+background-color: #00FF00; }
+
+body {font-family: Verdana,Arial,Helvetica, sans-serif; font-size: 12px;background-color: #CCFFFF; }
+h1 {font-size: 14px; font-variant: small-caps; color: #FE0000;background-color: #00FF00;}
+ p:first-letter { font-size: 200%; 1. income {background-color: #CCCCCC; }
+.expenses {background-color: #FF0000;}
+.profit {background-color: #FFFF00;}
+ #budgetsummary {background-color: #FFFFFF; border:dotted;}
+
+ body {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;
+background-color: #CCFFFF;}
+h1 {font-size: 14px; font-variant: small-caps; color: #FF0000; background-color: #00FF00;
+position: absolute;
+top: 0px; left: 0px;
+}
+p:first-letter l font-size: 200%; I
+•income {background-color: #CCCCCC; } expenses l background-color: #FF0000; }
+•profit { background-color: #EFFF00: }
+#budget summary { background-color: #EFFFFF;
+border: dotted;
+ padding: 20px; 
+ width: 500px;
+position: absolute;
+bottom: 0px;}
+
+body{
+    font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; background-color: #CCFFFF;}
+h1 {font-size: 14px; font-variant: small-caps: color: #PF0000; background-color: #00PP00;
+position: absolute;
+top: 0px;
+left: 0px;
+z-index:21;
+}
+p:first-letter {font-size: 200%, } 
+.income {background-color: #CCCCCC; }
+-expenses {background-color: #FF0000;}
+-profit {background-color: #FFFF00; }
+#budget summary{background-color: #FFFFFF; border: dotted; 
+padding: 20px; width: 500px;
+position: absolute; top: 0px; z-index:1;}
